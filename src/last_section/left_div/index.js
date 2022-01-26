@@ -50,13 +50,13 @@ function Left_div() {
             />
           </div>
         </div>
-        <button className="w-full flex items-center justify-center bg-[#E8D814] rounded-3xl  mt-8 py-2 hover:text-white hover:bg-black text-sm ">
+        <button className="transition duration-500 w-full flex items-center justify-center bg-[#E8D814] rounded-3xl  mt-8 py-2 hover:text-white hover:bg-black text-sm ">
           Send Message
         </button>
       </form>
-      <div>
+      {/* <div>
         <AiOutlineTwitter />
-      </div>
+      </div> */}
     </div>
   );
 }
