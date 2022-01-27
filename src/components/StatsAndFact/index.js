@@ -1,5 +1,5 @@
 import React from "react";
-import Progress from "../../molecules/Progess";
+import Progress from "../../molecules/Progress";
 function StatsAndFact() {
   return (
     <div className=" px-64 grid grid-cols-2 gap-5 p-10 py-20">
