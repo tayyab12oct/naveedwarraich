@@ -2,7 +2,6 @@ import React from "react";
 import Navbar_menu from "./narbar_element";
 import { BiMenu } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
-0;
 
 export default function Navbar_black() {
   const Navigate = useNavigate();

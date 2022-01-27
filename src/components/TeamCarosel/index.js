@@ -35,24 +35,31 @@ function TeamCarosel() {
     ],
   };
   return (
-    <div className="bg-[#202020] min-h-[50vh] px-64 text-white p-10 py-20">
-      <p className="text-xl pb-5">Lorem ipsum is simply dummy text</p>
+    // <div className="bg-[#202020] min-h-[50vh] px-64 text-white p-10 py-20">
+    <div className="bg-black-100 text-white transform rotate-6 w-[105%] -mx-11 overflow-hidden">
+      <div className="max-w-6xl mx-auto pb-32 transform -rotate-6 pt-7 h-full px-7">
+        <p className="text-lg pb-5 font-light font-roboto">
+          Lorem ipsum is simply dummy text
+        </p>
 
-      <h1 className="text-5xl font-bold pb-10 tracking-wide	">
-        OUR CREATIVE TEAM
-      </h1>
-      <Slider {...settings} className="h-full text-white  ">
-        {new Array(5).fill("1").map((v, k) => (
-          <div className="flex flex-col justify-center items-center  w-full px-22 h-[100%]">
-            <img
-              src="https://megaone.acrothemes.com/digital-agency/img/team1.png "
-              className="rounded-full pt-4 bg-[#E8D814] w-[250px]  h-[250px]"
-              alt=""
-            />
-            <p className="text-3xl font-semibold pt-10 ">Richard Stevens </p>
-          </div>
-        ))}
-      </Slider>
+        <h1 className="text-6xl font-medium font-oswald pb-10 tracking-wide	">
+          OUR CREATIVE TEAM
+        </h1>
+        <Slider {...settings} className="h-full text-white  ">
+          {new Array(5).fill("1").map((v, k) => (
+            <div className="flex flex-col justify-center items-center group cursor-pointer w-full px-22 h-[100%]">
+              <img
+                src="https://megaone.acrothemes.com/digital-agency/img/team1.png "
+                className="rounded-full pt-4 bg-[#E8D814] w-[250px]  h-[250px]"
+                alt=""
+              />
+              <p className="text-3xl font-normal font-oswald group-hover:text-secondary pt-10 ">
+                Richard Stevens{" "}
+              </p>
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 }
