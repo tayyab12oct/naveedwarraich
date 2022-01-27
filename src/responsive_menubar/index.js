@@ -1,6 +1,5 @@
 import React from "react";
 import { BsWhatsapp } from "react-icons/bs";
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { BsTwitter } from "react-icons/bs";
 import { AiFillInstagram, AiOutlineClose, AiFillYoutube } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
@@ -8,14 +7,14 @@ import { useNavigate } from "react-router-dom";
 function Responsive_menubar() {
   const Navigate = useNavigate();
   return (
-    <div className="border-2 border-black h-[100vh] bg-[#202020] p-14 ">
+    <div className="h-screen bg-black-100 p-14 fixed z-50 top-0 left-0 w-full">
       <AiOutlineClose
-        className=" text-white text-4xl ml-auto  cursor-pointer   "
+        className=" text-white text-4xl ml-auto  cursor-pointer  absolute top-20 right-20 "
         onClick={() => Navigate("/")}
       />
-      <div className="  flex  flex-col items-center justify-center h-[100%]">
+      <div className="  flex  flex-col items-center justify-center h-full">
         <img
-          className="w-32 "
+          className="w-32"
           src="https://megaone.acrothemes.com/digital-agency/img/logo-yellow.png"
         />
         <div className="w-6/12 text-white flex justify-around mt-16 font-bold text-2xl ">

@@ -1,18 +1,26 @@
-import React from "react";
+import React, { useEffect, useRef, useState, useCallback } from "react";
+import debounce from "lodash.debounce";
 
-function Hero_items() {
+function Hero_items({ rotate }) {
+  const ref = useRef(null);
+
   return (
-    <div className="flex items-center w-full justify-end   ">
-      <div className="flex w-7/12  mr-16    mt-10 items-center justify-center      ">
-        <div className=" ml-20 w-3/12">
+    <div className="flex items-center justify-end max-w-6xl ml-auto px-24">
+      <div
+        style={{ transform: rotate }}
+        className={`flex items-center transition-all `}
+      >
+        <div className="text-black-100 pb-20 flex flex-col items-end px-8">
           <h1 className="font-extrabold text-6xl">WE MAKE</h1>
-          <p className="ml-24">Beautiful & Responsive</p>
+          <p className="font-extralight mt-3 tracking-widest">
+            Beautiful & Responsive
+          </p>
         </div>
-        <div className="bg-[#E8D814] pt-5 ml-8 pt-10   px-4 w-7/12 text-white p-10 space-y-8 ">
+        <div className="bg-[#DBD526] flex items-start justify-center px-6 flex-col text-white w-[630px] h-[400px]">
           <h1 className="text-6xl font-thin">
-            Creative <br></br> <span className="font-black">Website </span>
+            Creative <br></br> <span className="font-black mt-2">Website </span>
           </h1>
-          <p className="font-thin  text-md tracking-widerst ">
+          <p className="font-thin my-8 text-sm tracking-widest text-opacity-60 pr-10">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris
             arcu, lobortis id interdum vitae, interdum eget elit.
           </p>

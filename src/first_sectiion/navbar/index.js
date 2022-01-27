@@ -1,18 +1,20 @@
 import React from "react";
 import Navbar_menu from "./narbar_element";
-import { BiMenu } from "react-icons/bi";
+import { VscMenu } from "react-icons/vsc";
 import { useNavigate } from "react-router-dom";
 
 export default function Navbar_black() {
   const Navigate = useNavigate();
 
   return (
-    <div className=" flex  w-10/12 ml-[200px] mt-10  justify-between items-center justify-center       ">
+    <div className="w-full mx-auto relative flex items-center">
       <Navbar_menu />
-      <BiMenu
-        className="mr-7 text-white w-12 h-10 cursor-pointer   "
-        onClick={() => Navigate("/side_bar")}
-      />
+      <div className="absolute top-0 h-full pr-20 flex items-center right-0">
+        <VscMenu
+          className="text-white h-8 w-8 mr-4 cursor-pointer"
+          onClick={() => Navigate("/side_bar")}
+        />
+      </div>
     </div>
   );
 }
