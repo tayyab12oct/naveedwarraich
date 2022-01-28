@@ -2,12 +2,12 @@ import React from "react";
 import Progress from "../../molecules/Progress";
 function StatsAndFact() {
   return (
-    <div className="max-w-6xl mx-auto px-7 grid grid-cols-2 gap-5 pt-20 pb-56 overflow-visible">
-      <div className="text-right pb-5 col-span-2">
+    <div className="max-w-6xl mx-auto lg:px-7 md:px-16 px-5 grid lg:grid-cols-2 grid-cols-1 gap-5 pt-20 pb-32">
+      <div className="lg:text-right text-center pb-5 lg:col-span-2">
         <p className="text-[#5CBDBB] font-light font-roboto text-lg tracking-wide pb-5">
           Lorem ipsum is simply dummy text
         </p>
-        <h1 className="text-6xl font-medium pb-8 font-oswald">
+        <h1 className="md:text-6xl text-5xl font-medium pb-8 font-oswald">
           AGENCY STATS & FACTS
         </h1>
         <p className="text-base font-roboto max-w-2xl ml-auto font-light pb-5">

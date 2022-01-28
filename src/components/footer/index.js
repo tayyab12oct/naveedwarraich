@@ -9,7 +9,7 @@ import { GrLinkedinOption } from "react-icons/gr";
 
 function Footer() {
   return (
-    <div className="max-w-6xl mx-auto px-8 py-24 flex items-center justify-between">
+    <div className="max-w-6xl w-full mx-auto md:px-8 px-2 py-24 flex flex-col lg:flex-row items-center lg:justify-between justify-center">
       <div className="flex items-center space-x-4">
         <div className="group hover:bg-primary h-10 w-10 flex items-center justify-center rounded-full cursor-pointer transition-all">
           <FaFacebookF className="h-4 w-5 text-black group-hover:text-white" />
@@ -30,7 +30,7 @@ function Footer() {
           <FaPinterestP className="h-4 w-7 text-black group-hover:text-white" />
         </div>
       </div>
-      <p className="text-sm font-light text-black-200 font-sans">
+      <p className="text-sm pt-4 font-roboto text-center md:text-right font-light text-black-200 lg:font-sans">
         © 2020 MegaOne. Made With Love By Themesindustry
       </p>
     </div>

@@ -16,22 +16,23 @@ import Suffle from "./components/suffle";
 function App() {
   return (
     <>
-      <Routes>
+      {/* <Routes>
         <Route exact path="/" element={<First_section />} />
       </Routes>
       <div className="py-24">
-        <Digital />
       </div>
-      <StatsAndFact />
       <TeamCarosel />
       <Suffle />
       <div className="py-32"></div>
+      <div className="py-24">
+    </div> */}
+      <StatsAndFact />
+      <Digital />
+      <StatsAndFact />
+      <TeamCarosel />
       <CustomerCarosel />
       <EnvantoImage />
-      <div className="py-24">
-        <TeamCarosel />
-      </div>
-
+      <TeamCarosel />
       <ContactUs />
       <Footer />
     </>
