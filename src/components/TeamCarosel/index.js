@@ -5,7 +5,7 @@ function TeamCarosel() {
   var settings = {
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
       {
@@ -34,7 +34,7 @@ function TeamCarosel() {
     ],
   };
   return (
-    <div className="bg-black-100 text-white bg-clipy">
+    <div id="team" className="bg-black-100 text-white ">
       <div className="max-w-6xl mx-auto pt-40 lg:pt-28 lg:pb-36 pb-20 h-full px-7 text-center lg:text-left">
         <p className="text-lg pb-5 font-light font-roboto">
           Lorem ipsum is simply dummy text
@@ -44,17 +44,8 @@ function TeamCarosel() {
           OUR CREATIVE TEAM
         </h1>
         <Slider {...settings} className="h-full text-white  ">
-          {new Array(3).fill("1").map((v, k) => (
-            <div
-              className={
-                k % 2 !== 0
-                  ? "pt-14 flex flex-col justify-center items-center group cursor-pointer w-full px-22"
-                  : k % 3 === 0
-                  ? "flex flex-col justify-center items-center group cursor-pointer w-full px-22"
-                  : "pt-24 flex flex-col justify-center items-center group cursor-pointer w-full px-22"
-              }
-              // className="flex flex-col justify-center items-center group cursor-pointer w-full px-22 h-[100%]"
-            >
+          {new Array(10).fill("1").map((v, k) => (
+            <div className="flex flex-col justify-center items-center group cursor-pointer w-full px-22 h-[100%]">
               <img
                 src="https://megaone.acrothemes.com/digital-agency/img/team1.png "
                 className="rounded-full pt-4 bg-[#E8D814] w-[250px]  h-[250px]"

@@ -18,16 +18,16 @@ function First_section() {
     <div
       onMouseLeave={leave}
       onMouseMove={mouseEnter}
-      className="h-[100vh] pb-10 relative flex-wrap bg-bottom-center bg-cover flex bg-[url('https://megaone.acrothemes.com/digital-agency/img/banner1.jpg')] "
+      id="hero"
+      className="h-[90vh] relative flex-wrap bg-bottom-center bg-cover flex bg-[url('https://megaone.acrothemes.com/digital-agency/img/banner1.jpg')] "
     >
       <div className="w-full flex flex-col">
         <Icon />
         <Navbar_black />
       </div>
-      <div className="w-full pb-40 self-center">
+      <div className="w-full self-center">
         <Hero_items rotate={rotate} />
       </div>
-      <div className="absolute w-[106%] -mx-12 rotate-6 -bottom-24 left-0 h-44 bg-white"></div>
     </div>
   );
 }

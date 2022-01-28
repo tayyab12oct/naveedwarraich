@@ -15,6 +15,7 @@
     "react-scripts": "5.0.0",
     "react-shuffle": "^2.1.0",
     "react-slick": "^0.28.1",
+    "react-spring": "^9.4.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

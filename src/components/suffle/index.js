@@ -62,7 +62,7 @@ class AnimatedItems extends Component {
     return (
       <div
         ref={(el) => (this.container = el)}
-        className=" grid-cols-2 gap-10 inline-grid "
+        className=" md:grid-cols-2 gap-10 inline-grid "
       >
         {this.props.children}
       </div>
@@ -198,17 +198,19 @@ export default class App extends Component {
     });
   }
   render() {
-    console.log("this", this.state);
     const { items } = this.state;
     return (
       <Fragment>
-        <div className="mx-auto max-w-6xl px-7 overflow-hidden pt-20">
-          <div className="w-1/2 relative z-50 text-black-100 font-bold -mb-48">
+        <div
+          id="blog"
+          className="mx-auto max-w-6xl px-7 pb-20 overflow-hidden pt-20"
+        >
+          <div className="md:w-1/2 relative z-50 text-black-100 font-bold -mb-48">
             <h1 className="overflow-hidden text-5xl leading-snug">
               OUR
               <br /> AMAZING PORTFOLIO
             </h1>
-            <div className="w-full mt-10 mb-8 flex space-x-5 items-center">
+            <div className="w-full md:mb-8 mb-56 mt-10 flex-col md:flex-row flex md:space-y-0 space-y-5 md:space-x-5 md:items-center">
               {this.state.tags?.map((v, k) => {
                 return (
                   <span
@@ -230,10 +232,10 @@ export default class App extends Component {
             {items.map((item, k) => (
               <div
                 className={`w-full h-full flex flex-wrap ${
-                  k === 0 ? "mt-48" : k === 3 ? "" : ""
+                  k === 0 ? "md:mt-48" : k === 3 ? "" : ""
                 } `}
               >
-                <div key={k} className={`h-[450px] w-full`}>
+                <div key={k} className={`md:h-[450px] w-full`}>
                   <img src={item?.img} className="w-full h-full" alt="" />
                 </div>
                 {k === 3 ? (

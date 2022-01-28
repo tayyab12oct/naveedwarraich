@@ -1,0 +1,12 @@
+*,
+body,
+html {
+  scroll-behavior: smooth;
+}
+.mega-container {
+  position: fixed;
+  z-index: 10;
+  top: 119px;
+  left: auto;
+  right: auto;
+}

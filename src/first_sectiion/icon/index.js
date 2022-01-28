@@ -11,7 +11,7 @@ export default function Icon() {
         <BsWhatsapp className="w-8 h-8 p-1" />
         <p className="font-bold text-md"> +1 631 123 4567</p>
       </div>
-      <div className="flex space-x-5 text-white ">
+      <div className="flex md:space-x-5 space-x-1 text-white ">
         <FaFacebookF className="w-8 h-8 p-1.5 transition-all cursor-pointer hover:bg-white hover:text-[#4267B2]  rounded-full " />
         <BsTwitter className="w-8 h-8 p-1.5 transition-all cursor-pointer hover:bg-white hover:text-[#4267B2]  rounded-full " />
         <AiFillInstagram className="w-8 h-8 p-1.5 transition-all cursor-pointer hover:bg-white hover:text-[#C13584]  rounded-full" />
