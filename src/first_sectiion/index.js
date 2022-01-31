@@ -3,6 +3,10 @@ import Icon from "./icon";
 import Navbar_black from "./navbar";
 import Hero_items from "./hero_items";
 import StepOne from "./stepOne";
+import StepTwo from "./steptwo";
+import StepThree from "./step 3";
+
+import StepFour from "./step4";
 function First_section() {
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
@@ -28,7 +32,10 @@ function First_section() {
       </div>
       <div className="w-full self-center">
         {/* <Hero_items rotate={rotate} /> */}
-        <StepOne rotate={rotate} />
+        {/* <StepOne rotate={rotate} /> */}
+        {/* <StepTwo rotate={rotate} /> */}
+        {/* <StepThree rotate={rotate} /> */}
+        <StepFour />
       </div>
     </div>
   );
