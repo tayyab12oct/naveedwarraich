@@ -1,6 +1,6 @@
 import React from "react";
 
-function StepThree({ rotate }) {
+function StepThree({ rotate, nextStep }) {
   return (
     <div>
       {" "}
@@ -14,43 +14,42 @@ function StepThree({ rotate }) {
             <p className="font-extralight mt-3 tracking-widest">get Quote</p>
           </div>
           <div className="bg-[#DBD526] flex flex-col justify-between  md:px-6 md:py-10 py-10  text-white h-[400px] md:w-[700px] w-[400px]">
-            
-              <p className="font-thin text-2xl tracking-wide text-opacity-60 md:pl-0 px-6 md:pr-10">
-                Wie konnen wir Sie errichen?
+            <p className="font-thin text-2xl tracking-wide text-opacity-60 md:pl-0 px-6 md:pr-10">
+              Wie konnen wir Sie errichen?
+            </p>
+
+            <div className="flex justify-center items-center w-full ">
+              <label className="w-10 text-right font-thin text-2xl">
+                Email:
+              </label>
+              <input
+                className="shadow-sm p-3 placeholder-white  w-full bg-white bg-opacity-50 mx-14 block w-[80%] sm:text-sm border-white rounded-md outline-white"
+                placeholder="Input Placeholder"
+              />
+            </div>
+            <div className="flex justify-center items-center w-full ">
+              <label className="w-10 text-right font-thin text-2xl">
+                Tell:
+              </label>
+              <input
+                className="shadow-sm p-3 placeholder-white  w-full bg-white bg-opacity-50 mx-14 block w-[80%] sm:text-sm border-white rounded-md outline-white"
+                placeholder="Input Placeholder"
+              />
+            </div>
+
+            <div className="flex justify-center items-center w-full ">
+              <p className="text-left font-thin text-2xl">
+                r mhksudhfks pojsad lajis d asijdalskjd dhfkjhsdf
               </p>
-            
-           
-              <div className="flex justify-center items-center w-full " >
-                <label className="w-10 text-right font-thin text-2xl">Email:</label>
-                  <input
-              className="shadow-sm p-3 placeholder-white  w-full bg-white bg-opacity-50 mx-14 block w-[80%] sm:text-sm border-white rounded-md outline-white"
-              placeholder="Input Placeholder"
-            />
-                </div>
-                 <div className="flex justify-center items-center w-full " >
-                <label className="w-10 text-right font-thin text-2xl">Tell:</label>
-                  <input
-              className="shadow-sm p-3 placeholder-white  w-full bg-white bg-opacity-50 mx-14 block w-[80%] sm:text-sm border-white rounded-md outline-white"
-              placeholder="Input Placeholder"
-            />
-                </div>
-                 
-                 <div className="flex justify-center items-center w-full " >
+            </div>
 
-                  <p className="text-left font-thin text-2xl">r mhksudhfks pojsad lajis d asijdalskjd dhfkjhsdf</p>
-                </div>
-
-
-            
-          
-        
-    
-             
             <div className="flex justify-end items-center">
-              <button className=" w-40 p-3 rounded-3xl border-2 hover:bg-white hover:text-black-800  hover:border-none">
+              <button
+                onClick={nextStep}
+                className=" w-40 p-3 rounded-3xl border-2 hover:bg-white hover:text-black-800  hover:border-none"
+              >
                 Submit
               </button>
-              
             </div>
           </div>
         </div>

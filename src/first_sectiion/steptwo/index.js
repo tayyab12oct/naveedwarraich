@@ -1,6 +1,6 @@
 import React from "react";
 
-function StepTwo({ rotate }) {
+function StepTwo({ rotate, nextStep }) {
   return (
     <div>
       {" "}
@@ -19,37 +19,40 @@ function StepTwo({ rotate }) {
                 Bitte wahlen Sie lhren personlichen Tarif
               </p>
             </h1>
-          
-          <div className="w-full flex justify-around ">
-                <label  className=" font-thin text-xl w-10">einmalig</label>
-                <input type="range" className="w-80"min="12" max="84"  />
 
-                 <h1 className="w-10 text-right">160C</h1>   
-  
-              </div>
-             <div className="w-full flex justify-around ">
-                <label  className=" font-thin text-xl w-10">monatlich </label>
-                <input type="range" className="w-80"min="12" max="84"  />
+            <div className="w-full flex justify-around ">
+              <label className=" font-thin text-xl w-10">einmalig</label>
+              <input type="range" className="w-80" min="12" max="84" />
 
-                 <h1 className="w-10 text-right">29C</h1>   
-  
+              <h1 className="w-10 text-right">160C</h1>
+            </div>
+            <div className="w-full flex justify-around ">
+              <label className=" font-thin text-xl w-10">monatlich </label>
+              <input type="range" className="w-80" min="12" max="84" />
+
+              <h1 className="w-10 text-right">29C</h1>
+            </div>
+
+            <div className="flex space-x-16 items-center">
+              <h1 className="w-32 text-right">Laufzeit*</h1>
+              <div className="grid grid-cols-4 w-full  gap-16  ">
+                <button className=" bg-opacity-50 placeholder-white  outline-white border-white w-24 p-3 rounded-lg border-2 hover:bg-white hover:text-black-800  hover:border-none">
+                  1 Jahr
+                </button>
+                <button className=" bg-opacity-50 placeholder-white  outline-white border-white w-24 p-3 rounded-lg border-2 hover:bg-white hover:text-black-800  hover:border-none">
+                  2 jahre
+                </button>
+                <button className="  bg-opacity-50 placeholder-white  outline-white border-white w-24 p-3 rounded-lg border-2 hover:bg-white hover:text-black-800  hover:border-none">
+                  3 jahre
+                </button>
               </div>
-    
-              <div className="flex space-x-16 items-center">
-                  <h1 className="w-32 text-right">Laufzeit*</h1>
-                <div className="grid grid-cols-4 w-full  gap-16  ">
-                    <button className=" bg-opacity-50 placeholder-white  outline-white border-white w-24 p-3 rounded-lg border-2 hover:bg-white hover:text-black-800  hover:border-none">
-                1 Jahr 
-              </button><button className=" bg-opacity-50 placeholder-white  outline-white border-white w-24 p-3 rounded-lg border-2 hover:bg-white hover:text-black-800  hover:border-none">
-                2 jahre
-              </button><button className="  bg-opacity-50 placeholder-white  outline-white border-white w-24 p-3 rounded-lg border-2 hover:bg-white hover:text-black-800  hover:border-none">
-                3 jahre
-              </button>
-                </div>
-                  </div>
+            </div>
             <div className="flex justify-between items-center">
               <h1>*Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-              <button className=" w-40 p-3 rounded-3xl border-2 hover:bg-white hover:text-black-800  hover:border-none">
+              <button
+                onClick={nextStep}
+                className=" w-40 p-3 rounded-3xl border-2 hover:bg-white hover:text-black-800  hover:border-none"
+              >
                 Weiter
               </button>
             </div>

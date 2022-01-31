@@ -1,6 +1,6 @@
 import React from "react";
 
-function StepOne({ rotate }) {
+function StepOne({ rotate, nextStep }) {
   return (
     <div>
       {" "}
@@ -24,7 +24,11 @@ function StepOne({ rotate }) {
               placeholder="Input Placeholder"
             />
             <div className="flex justify-end">
-              <button className=" w-40 p-3 rounded-3xl border-2 hover:bg-white hover:text-black-800  hover:border-none">
+              <button
+                type="button"
+                onClick={nextStep}
+                className=" w-40 p-3 rounded-3xl border-2 hover:bg-white hover:text-black-800  hover:border-none"
+              >
                 lern more
               </button>
             </div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState, useCallback } from "react";
 import debounce from "lodash.debounce";
 
-function Hero_items({ rotate }) {
+function Hero_items({ rotate, nextStep }) {
   const ref = useRef(null);
 
   return (
@@ -24,7 +24,10 @@ function Hero_items({ rotate }) {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris
             arcu, lobortis id interdum vitae, interdum eget elit.
           </p>
-          <button className=" w-40 p-3  rounded-3xl border-2 hover:bg-white hover:text-black hover:border-none">
+          <button
+            onClick={nextStep}
+            className=" w-40 p-3  rounded-3xl border-2 hover:bg-white hover:text-black hover:border-none"
+          >
             lern more
           </button>
         </div>
