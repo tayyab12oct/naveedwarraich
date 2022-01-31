@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Icon from "./icon";
 import Navbar_black from "./navbar";
 import Hero_items from "./hero_items";
+import StepOne from "./stepOne";
 function First_section() {
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
@@ -26,7 +27,8 @@ function First_section() {
         <Navbar_black />
       </div>
       <div className="w-full self-center">
-        <Hero_items rotate={rotate} />
+        {/* <Hero_items rotate={rotate} /> */}
+        <StepOne rotate={rotate} />
       </div>
     </div>
   );
